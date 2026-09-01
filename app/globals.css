@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #17233d;
+  --paper: #fffdf8;
+}
+
+* { box-sizing: border-box; }
+html, body { min-height: 100%; }
+body {
+  margin: 0;
+  background: #f7f4ec;
+  color: var(--ink);
+  font-family: "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+}
+button, input, textarea { font: inherit; }
+button { -webkit-tap-highlight-color: transparent; }
+::selection { background: #ffe286; color: #17233d; }
+
+@media print {
+  body { background: white; }
+}
