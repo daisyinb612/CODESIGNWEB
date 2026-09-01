@@ -7,13 +7,3 @@ declare module "react-native-web" {
   export const View: any;
   export function useWindowDimensions(): { width: number; height: number };
 }
-
-interface Fetcher {
-  fetch(request: Request): Promise<Response>;
-}
-
-interface D1Database {}
-
-declare module "cloudflare:workers" {
-  export const env: { DB?: any };
-}
